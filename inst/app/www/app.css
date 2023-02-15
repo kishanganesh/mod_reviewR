@@ -1,0 +1,96 @@
+
+#hadm_id_output, #reset_hadm_id, #hadm_id_display {
+  display: inline-block;
+}
+
+#reset_hadm_id {
+  margin-left: 20px;
+}
+
+.parameters {
+  font-size: 18px;
+}
+
+.wrapper .content-wrapper { overflow-y: scroll; }
+
+#abstraction_form {
+  padding: 15px;
+  background-color: #EEEEEE;
+  border: solid 1px black;
+}
+
+.home_container {
+  margin-top: 30px;
+}
+
+.home_panel {
+  background-color: #FFFFFFF;
+  border: solid 1px black;
+  padding: 15px;
+  text-align: center;
+}
+
+.shiny-notification {
+  position:fixed;
+  top: calc(0%);
+  left: calc(0%);
+  white-space: pre-line;
+  opacity: 1;
+}
+
+.subject_id_label, .subject_id_label_value {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+.subject_id_label {
+  font-weight: bold;
+}
+
+.subject_id_header {
+  margin-bottom: 10px;
+}
+
+#subject_review_status {
+  width: 16px;
+  height: 16px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+#prev_patient, #next_patient {
+  width: 95%;
+}
+
+.status {
+  padding: 10px 5px;
+}
+
+.redcap_configure {
+  text-align: center;
+}
+
+.redcap_configure_needed, .error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+.redcap_configure_complete, .success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.unpadded {
+  padding: 0;
+}
+
+.marginless {
+  margin: 0;
+}
+
+.full_box > .col-sm-12 {
+  padding: 0;
+  margin: 0;
+}
