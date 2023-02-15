@@ -1,0 +1,15 @@
+## {new_data_model} {new_table} Table ----
+#' @param subject_id The selected subject 
+#'
+#' @rdname {new_data_model}_tables
+#' @keywords internal
+#' 
+{new_data_model}_table_{new_table} <- function(table_map, db_connection, subject_id) {{
+  subject <- as.integer(subject_id)
+  user_table(table_map, db_connection, '{new_table}') %>% 
+    filter(!!as.name(user_field(table_map, '{new_table}','{patient_identifier_field}')) == subject) %>% 
+    select(-matches('{patient_identifier_field}', ignore.case = T)) %>% 
+    collect()
+}}
+
+
